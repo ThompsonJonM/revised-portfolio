@@ -11,6 +11,25 @@ body {
 
 /* Individual IDs */
 
+#connectImageOne {
+	height: 46px;
+	width: 48px;
+	margin-top: 2.5px;
+	padding-bottom: 1px;
+}
+
+#connectImageTwo {
+	height: 50px;
+	width: 50px;
+	margin-right: 12px;
+}
+
+#connectImageThree {
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
+
 /* Classes */
 
 .navbar {
@@ -31,7 +50,7 @@ body {
   
   .card {
 	float: left;
-	width: 33.333%;
+	width: 33%;
 	padding: .75rem;
 	margin-bottom: 2rem;
 	border: 0;
