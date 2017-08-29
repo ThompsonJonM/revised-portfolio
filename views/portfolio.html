@@ -20,95 +20,99 @@
 
     <!-- Nav Bar -->
     <div class="container">
-        <div class="masthead">
-            <h2 class="float-left">My Portfolio</h2>
+        <nav class="navbar navbar-toggleable-md navbar-light">
+            <a href="" class="navbar-brand float-left"><h2>My Portfolio</h2></a>
+            
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <a href="https://stackoverflow.com/users/8517636/jonathan-thompson?tab=profile" target="_blank"><img class="float-right" src="../assets/img/stack.png" id="connectImageOne"></a>
-            <a href="https://www.linkedin.com/in/jonathanmnthompson/" target="_blank"><img class="float-right" src="../assets/img/linkedin.png" id="connectImageTwo"></a>
-            <a href="https://github.com/thompsonjonm" target="_blank"><img class="float-right" src="../assets/img/github.png" id="connectImageThree"></a>
+            <div class="collapse navbar-collapse" id="navbarCollapse" aria-expanded="false" style>
+                <ul class="navbar-nav float-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About Me</a>
+                    </li>
 
-            <br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">My Portfolio</a>
+                    </li>
 
-            <nav class="navbar navbar-light">
-
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-toggleable-md collapse" id="navbarCollapse" aria-expanded="false" style>
-                    <ul class="nav navbar-nav text-md-center justify-content-md-between">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">My Portfolio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
     
     <div class="album">
         <div class="container">
             <div class="row">
-                <div class="card">
-                    <img class="card-img-top img-responsive" src="../assets/img/moodsicImage.png" alt="moodsic display">
-                    <div class="card-block">
-                        <h4 class="card-title">Moodsic</h4>
-                        <p class="card-text">Moodsic is a mood-changing web app which uses a number of APIs to create playlists to change your mood.</p>
-                        <a href="https://thompsonjonm.github.io/project-one" target="_blank" class="btn btn-primary cardButton">Moodsic</a>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="card col-lg-4">
+                            <img class="card-img-top img-fluid img-thumbnail" src="../assets/img/moodsicImage.png" alt="moodsic display">
+                            <div class="card-block">
+                                <h4 class="card-title">Moodsic</h4>
+                                <p class="card-text">Moodsic is a mood-changing web app which uses a number of APIs to create playlists to change your mood.</p>
+                                <a href="https://thompsonjonm.github.io/project-one" target="_blank" class="btn btn-primary cardButton">Moodsic</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-4">
+                            <img class="card-img-top img-fluid img-thumbnail" src="../assets/img/moodsicImage.png" alt="friend-finder display">
+                            <div class="card-block">
+                                <h4 class="card-title">Full-Stack App</h4>
+                                <p class="card-text">A full-stack site using express.js to build a mock dating application.</p>
+                                <a href="https://thompsonjonm.github.io/friend-finder" target="_blank" class="btn btn-primary cardButton">Full-Stack App</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-4">
+                            <img class="card-img-top img-fluid img-thumbnail" src="../assets/img/moodsicImage.png" alt="train-scheduler display">
+                            <div class="card-block">
+                                <h4 class="card-title">Scheduler App</h4>
+                                <p class="card-text">A scheduling app built with jQuery which uses FirebaseDB, Moment.js, and user input to update the DOM.</p>
+                                <a href="https://thompsonjonm.github.io/train-scheduler" target="_blank" class="btn btn-primary cardButton">Scheduler App</a>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="row">
+                        <div class="card col-lg-4">
+                            <img class="card-img-top img-fluid img-thumbnail" src="../assets/img/moodsicImage.png" alt="giphy display">
+                            <div class="card-block">
+                                <h4 class="card-title">Giphy App</h4>
+                                <p class="card-text">A small web application using Giphy API and jQuery to port gifs to the DOM based on user input.</p>
+                                <a href="https://thompsonjonm.github.io/giphy-app" target="_blank" class="btn btn-primary cardButton">Giphy App</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-4">
+                            <img class="card-img-top img-fluid img-thumbnail" src="../assets/img/moodsicImage.png" alt="burger display">
+                            <div class="card-block">
+                                <h4 class="card-title">Database App</h4>
+                                <p class="card-text">Eat-da-Burger is a full-stack web application using express handlebars.</p>
+                                <a href="https://thompsonjonm.github.io/burger" target="_blank" class="btn btn-primary cardButton">Database App</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-4">
+                            <img class="card-img-top img-fluid img-thumbnail" src="../assets/img/moodsicImage.png" alt="liri display">
+                            <div class="card-block">
+                                <h4 class="card-title">LIRI App</h4>
+                                <p class="card-text">LIRI is a command line application using node.js to take in user data and provide output from a number of APIs.</p>
+                                <a href="https://thompsonjonm.github.io/liri-app" target="_blank" class="btn btn-primary cardButton">Liri App</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <img class="card-img-top img-responsive" src="../assets/img/moodsicImage.png" alt="friend-finder display">
-                    <div class="card-block">
-                        <h4 class="card-title">Full-Stack App</h4>
-                        <p class="card-text">A full-stack site using express.js to build a mock dating application.</p>
-                        <a href="https://thompsonjonm.github.io/friend-finder" target="_blank" class="btn btn-primary cardButton">Full-Stack App</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top img-responsive" src="../assets/img/moodsicImage.png" alt="train-scheduler display">
-                    <div class="card-block">
-                        <h4 class="card-title">Scheduler App</h4>
-                        <p class="card-text">A scheduling app built with jQuery which uses FirebaseDB, Moment.js, and user input to update the DOM.</p>
-                        <a href="https://thompsonjonm.github.io/train-scheduler" target="_blank" class="btn btn-primary cardButton">Scheduler App</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top img-responsive" src="../assets/img/moodsicImage.png" alt="giphy display">
-                    <div class="card-block">
-                        <h4 class="card-title">Giphy App</h4>
-                        <p class="card-text">A small web application using Giphy API and jQuery to port gifs to the DOM based on user input.</p>
-                        <a href="https://thompsonjonm.github.io/giphy-app" target="_blank" class="btn btn-primary cardButton">Giphy App</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top img-responsive" src="../assets/img/moodsicImage.png" alt="burger display">
-                    <div class="card-block">
-                        <h4 class="card-title">Database App</h4>
-                        <p class="card-text">Eat-da-Burger is a full-stack web application using express handlebars.</p>
-                        <a href="https://thompsonjonm.github.io/burger" target="_blank" class="btn btn-primary cardButton">Database App</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top img-responsive" src="../assets/img/moodsicImage.png" alt="liri display">
-                    <div class="card-block">
-                        <h4 class="card-title">LIRI App</h4>
-                        <p class="card-text">LIRI is a command line application using node.js to take in user data and provide output from a number of APIs.</p>
-                        <a href="https://thompsonjonm.github.io/liri-app" target="_blank" class="btn btn-primary cardButton">Liri App</a>
-                    </div>
+                <div class="col-sm-12 col-md-12 col-lg-3" id="contactBox">
+                    <a href="https://stackoverflow.com/users/8517636/jonathan-thompson?tab=profile" target="_blank"><img class="float-right" src="../assets/img/stack.png" id="connectImageOne"></a>
+                    <a href="https://www.linkedin.com/in/jonathanmnthompson/" target="_blank"><img class="float-right" src="../assets/img/linkedin.png" id="connectImageTwo"></a>
+                    <a href="https://github.com/thompsonjonm" target="_blank"><img class="float-right" src="../assets/img/github.png" id="connectImageThree"></a>
                 </div>
             </div>
         </div>

@@ -29,11 +29,4 @@ $(document).ready(function() {
 
     });
 
-    database.ref().on('child_added', function(childSnapshot) {
-        
-        var name = childSnapshot.val().name;
-        var email = childSnapshot.val().email;
-        var message = childSnapshot.val().message;
-    });
-
 });
