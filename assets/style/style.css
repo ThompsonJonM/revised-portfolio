@@ -15,8 +15,8 @@ body {
 	height: 46px;
 	width: 48px;
 	margin-top: 2.5px;
-	margin-right: 140px;
-	padding-bottom: 1px;
+	margin-right: 12px;
+	padding-bottom: 1.5px;
 }
 
 #connectImageTwo {
@@ -28,11 +28,10 @@ body {
 #connectImageThree {
 	height: 50px;
 	width: 50px;
-	margin-right: 10px;
 }
 
 /* #contactBox {
-	height: 100px;
+	position: fixed;
 } */
 
 #contactForm {
@@ -40,6 +39,10 @@ body {
 }
 
 /* Classes */
+
+.sidebar-nav {
+	position: fixed;
+}
 
 /* .navbar, #contactBox {
 	margin-top: 30px;
