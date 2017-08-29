@@ -56,31 +56,31 @@ body {
 	background-color: #f7f7f7;
   }
   
-  .card {
-	padding: .75rem;
-	margin: 0px;
-	border: 0;
-  }
-  
-  .card > img {
-	margin-bottom: .75rem;
-  }
-  
-  .card-text {
-	font-size: 85%;
-  }
+.card {
+padding: .75rem;
+margin: 0px;
+border: 0;
+}
 
-  .cardButton {
-	  width: 100%;
-  }
+.card > img {
+margin-bottom: .75rem;
+}
 
-  .footer {
-	  position: absolute;
-	  bottom: 0;
-	  width: 100%;
-	  height: 40px;
-	  line-height: 40px;
-  }
+.card-text {
+font-size: 85%;
+}
+
+.cardButton {
+	width: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
 
 /* Queries */
 
