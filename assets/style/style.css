@@ -57,29 +57,63 @@ body {
 	color: black;
 }
 
-.album {
-	margin-top: 20px;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	background-color: #f7f7f7;
-  }
-  
-.card {
-padding: .75rem;
-margin: 0px;
-border: 0;
+.nav-link:hover {
+	color: black;
 }
 
-.card > img {
-margin-bottom: .75rem;
+.imageBlock {
+	position: relative;
 }
 
-.card-text {
-font-size: 85%;
-}
-
-.cardButton {
+.projectImg {
+	margin-bottom: .75rem;
+	max-height: 235px;
+	min-height: 235px;
 	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.85;
+}
+
+.imgDescriptWide {
+	position: absolute;
+	visibility: hidden;
+	margin-left: 2.5%; 
+	margin-right: 2.5%;
+	height: 235px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+}
+
+.imgDescriptShort {
+	position: absolute;
+	visibility: hidden;
+	margin-left: 3.5%; 
+	margin-right: 3.5%;
+	height: 235px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+}
+
+.imageBlock:hover .imgDescriptWide{
+	opacity: 1.0;
+	visibility: visible;
+}
+
+.imageBlock:hover .imgDescriptShort{
+	opacity: 1.0;
+	visibility: visible;
 }
 
 .footer {
