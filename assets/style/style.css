@@ -57,29 +57,29 @@ body {
 	color: black;
 }
 
+.nav-link:hover {
+	color: black;
+}
+
 .album {
 	margin-top: 20px;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	background-color: #f7f7f7;
   }
-  
-.card {
-padding: .75rem;
-margin: 0px;
-border: 0;
-}
 
-.card > img {
-margin-bottom: .75rem;
-}
-
-.card-text {
-font-size: 85%;
-}
-
-.cardButton {
+.projectImg {
+	margin-bottom: .75rem;
+	/* padding: .75rem;
+	margin: 0px; */
+	max-height: 235px;
 	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.5;
+}
+
+.projectImg:hover {
+	opacity: 1.0;
 }
 
 .footer {
