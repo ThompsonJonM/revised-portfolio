@@ -8,11 +8,14 @@
     <!-- Reset -->
     <link rel="stylesheet" type="text/css" href="./assets/style/reset.css">
 
-    <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
-
     <!-- BS 4 CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -30,10 +33,12 @@
             <!-- Sidebar Nav Column; Fixed Bar-->
             <div class="col-2 sidebar-offcanvas" id='sidebar'>
                 <div class="nav navbar-default" role='navigation'>
-                    <ul class="nav navbar-nav">
-                        <li><a href='index.html' class='nav-link'><h3>About</h3></a></li>
-                        <li><a href='#workAnchor' class='nav-link'><h3>Portfolio</h3></a></li>
-                        <li><a href='#contactAnchor' class='nav-link'><h3>Contact</h3></a></li>
+                    <ul class="nav navbar-nav" id='navList'>
+                        <li><a href='index.html' class='nav-link'><h4><b>ABOUT</b></h4></a></li>
+                        <hr>
+                        <li><a href='#workAnchor' class='nav-link'><h4><b>PORTFOLIO</b></h4></a></li>
+                        <hr>
+                        <li><a href='#contactAnchor' class='nav-link'><h4><b>CONTACT</b></h4></a></li>
                     </ul>
                 </div>
             </div>
@@ -41,9 +46,9 @@
             <!-- Main Body Column -->
             <div class="col-sm-5 ml-sm-auto col-md-10 ml-md-auto col-lg-8 ml-lg-auto mr-lg-auto" id="mainBodySection">
                 <div class="row" id='aboutMeRow'>
-                    <div class="col-lg-12 text-center">
-                        <h2>Jonathan Thompson</h2>
-                        <h5>Web Developer | Chicago, IL</h5>
+                    <div class="col-lg-12 text-center" id='headerText'>
+                        <h2><b>Jonathan Thompson</b></h2>
+                        <h5><b>Web Developer | Chicago, IL</b></h5>
 
                         <br>
                         <br>
@@ -56,7 +61,7 @@
                         <br>
 
                         <p class="text-center d-md-none">
-                            <button type='button' class="btn btn-primary btn-sm" data-toggle='offcanvas'>Toggle Navbar</button>
+                            <button type='button' class="btn btn-dark btn-sm" data-toggle='offcanvas'>Toggle Navbar</button>
                         </p>
 
                     </div>
@@ -65,6 +70,7 @@
                 <br>
                 <br>
                 <br>
+                
 
                 <div class="row">
                     <div class="col-sm-3 mr-sm-auto col-md-6 mr-md-auto col-lg-5" id="aboutMePhoto">
@@ -73,23 +79,28 @@
 
                     <div class="col-sm-3 mr-sm-auto col-md-6 ml-md-auto mr-md-auto col-lg-5" id="aboutMeText">
                         <p>
-                            I am a results driven engineer with proven military leadership
-                            and experience in both front-end and back-end web development.
-                            I have a demonstrated ability to learn and adapt quickly to
-                            high-tempo working environments and consider myself extremely 
-                            detail oriented with excellent communication skills.
+                            <b>I've been tooling around with web development for more than a 
+                            decade and began with creating templates for MySpace as a hobby.</b>
                         </p>
 
                         <p>
-                            I currently work as a Quality Assurance Manager for a medical
+                            <b>I hold a Bachelors of Arts with a major in History and Anthropology
+                            from <a href='https://www2.naz.edu/academics/history-degree-program/' target='_blank'>Nazareth College of Rochester</a>. Originally from New York, I have
+                            called Chicago my home for the last three years.</b>
+                        </p>
+
+                        <p>
+                            <b>I currently work as a Quality Assurance Manager for a medical
                             engineering firm while taking classes in full-stack web 
                             development through Northwestern University. I am currently
-                            seeking new and exciting opportunities.
+                            seeking new and exciting opportunities.</b>
                         </p>
                     </div>
                 </div>
 
 
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -99,8 +110,8 @@
 
                 <div class='row'>
                     <div class="col-sm-10 ml-sm-auto col-md-12 ml-md-auto col-lg-12">
-                        <h2 class="text-center" id='workAnchor'>Work</h2>
-                        <h5 class='text-center'>A sampling of my completed projects</h5>
+                        <h2 class="text-center" id='workAnchor'><strong>Work</strong></h2>
+                        <h5 class='text-center'><strong>A sampling of my completed projects</strong></h5>
                     </div>
                 </div>
 
@@ -177,10 +188,12 @@
                 <br>
                 <br>
                 <br>
+                <br>
+                <br>
 
                 <div class="row">
                     <div class="col-sm-10 ml-sm-auto col-md-12 ml-md-auto col-lg-12">
-                        <h3 class='text-center' id='contactAnchor'>Send me a Message</h3>
+                        <h3 class='text-center' id='contactAnchor'><b>Send me a Message</b></h3>
                     </div>
                 </div>
 
@@ -191,17 +204,17 @@
                 <div class="row">
                     <form class="col-sm-10 ml-sm-auto col-md-10 mr-md-auto col-lg-12" role="form" id="contactForm">
                         <div class="form-group">
-                            <label for="name" class="h4">Name</label>
+                            <label for="name" class="h4"><b>Name</b></label>
                             <input type="text" class="form-control" id="name" placeholder="Enter your Name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="email" class="h4">Email</label>
+                            <label for="email" class="h4"><b>Email</b></label>
                             <input type="text" class="form-control" id="email" placeholder="Enter an Email" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="message" class="h4">Message</label>
+                            <label for="message" class="h4"><b>Message</b></label>
                             <textarea class="form-control" id="message" rows="10" placeholder="Enter a Message" required></textarea>
                         </div>
                     </form>
@@ -209,7 +222,7 @@
 
                 <div class="row">
                     <div class="col-sm-10 ml-sm-auto col-md-10 mr-md-auto col-lg-12">
-                        <button type="submit" id="form-submit" class="btn btn-success btn-lg">Submit</button>
+                        <button type="submit" id="form-submit" class="btn btn-dark btn-lg">Submit</button>
                     </div>
                 </div>
 
