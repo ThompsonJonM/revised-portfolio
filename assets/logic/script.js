@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active')
+    });
+
     // Initialize Firebase
     var config = {
         apiKey: "AIzaSyBbx5cWQJCYzT9zd8Q93YDOVAedyzhhGlw",
