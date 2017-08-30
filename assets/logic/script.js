@@ -4,6 +4,10 @@ $(document).ready(function() {
         $('.row-offcanvas').toggleClass('active')
     });
 
+    $('.nav-link').click(function () {
+        $('.row-offcanvas').removeClass('active')
+    });
+
     // Initialize Firebase
     var config = {
         apiKey: "AIzaSyBbx5cWQJCYzT9zd8Q93YDOVAedyzhhGlw",
