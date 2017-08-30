@@ -61,25 +61,58 @@ body {
 	color: black;
 }
 
-.album {
-	margin-top: 20px;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	background-color: #f7f7f7;
-  }
+.imageBlock {
+	position: relative;
+}
 
 .projectImg {
 	margin-bottom: .75rem;
-	/* padding: .75rem;
-	margin: 0px; */
 	max-height: 235px;
 	width: 100%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	opacity: 0.5;
+	opacity: 0.85;
 }
 
-.projectImg:hover {
+.imgDescriptWide {
+	position: absolute;
+	visibility: hidden;
+	margin-left: 2.5%; 
+	margin-right: 2.5%;
+	height: 235px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.2);
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+}
+
+.imgDescriptShort {
+	position: absolute;
+	visibility: hidden;
+	margin-left: 3.5%; 
+	margin-right: 3.5%;
+	height: 235px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.2);
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+}
+
+.imageBlock:hover .imgDescriptWide{
 	opacity: 1.0;
+	visibility: visible;
+}
+
+.imageBlock:hover .imgDescriptShort{
+	opacity: 1.0;
+	visibility: visible;
 }
 
 .footer {
